@@ -19,7 +19,7 @@ Desenvolvido com foco em boas práticas e ferramentas modernas como **Poetry**, 
 ---
 
 ## 📁 Estrutura do Projeto
-
+```
 .
 ├── fastapi_zero/ # Código da aplicação (app.py, routers, etc.) 
 ├── tests/ # Testes automatizados
@@ -27,7 +27,7 @@ Desenvolvido com foco em boas práticas e ferramentas modernas como **Poetry**, 
 ├── README.md # Este arquivo
 ├── pyproject.toml # Configurações do projeto via Poetry
 └── .gitignore # Arquivos e pastas ignoradas no Git
-
+```
 
 
 📜 Licença

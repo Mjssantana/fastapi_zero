@@ -15,3 +15,14 @@ def test_root_dever_retornar_hello_world():
     response = client.get('/')
     assert response.json() == {'message': 'Hello World'}
     assert response.status_code == HTTPStatus.OK
+
+
+def test_noise():
+    client = TestClient(app)
+    response = client.get('/noise')
+    resposta = response.text
+    print(dir(response))
+    print(response.http_version)
+
+    assert '<h1>Hello World</h1>' in resposta
+    assert response.status_code == HTTPStatus.OK
